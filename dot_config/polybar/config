@@ -129,7 +129,8 @@ font-1 = "icomoon:Regular:size=10;2"
 #modules-left = bspwm separator mpd_i mpd separator
 modules-left = bspwm
 modules-center =  title
-modules-right = updates_i updates separator keyboard_i keyboard separator cpu_i cpu separator memory_i memory temperature_i temperature separator  separator battery_i battery separator backlight_i backlight separator pulseaudio_i pulseaudio separator date_i date
+#modules-right = updates_i updates separator keyboard_i keyboard separator cpu_i cpu separator memory_i memory temperature_i temperature separator  separator battery_i battery separator backlight_i backlight separator pulseaudio_i pulseaudio separator date_i date
+modules-right = keyboard_i keyboard separator cpu_i cpu separator memory_i memory separator temperature_i temperature separator battery_i battery separator backlight_i backlight separator pulseaudio_i pulseaudio separator date_i date
 
 ; The separator will be inserted between the output of each module
 separator =
