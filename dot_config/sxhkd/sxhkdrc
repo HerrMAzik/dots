@@ -68,7 +68,9 @@ shift + Print
     flameshot gui
 ### Volume Control ###
 XF86Audio{Raise,Lower}Volume
-    pulsemixer {--change-volume +5, --change-volume -5}
+    pamixer {-i 5, -d 5}
+XF86AudioMute
+    pamixer -t
 ### Brightness Control
 XF86MonBrightness{Down,Up}
     brightnessctl s {10%-, +10%}
