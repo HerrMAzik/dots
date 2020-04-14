@@ -1,5 +1,0 @@
-export XDG_CONFIG_HOME="$HOME/.config"
-export EDITOR="nvim"
-export VISUAL="codium"
-export BROWSER="firefox"
-export TERMINAL="alacritty"
