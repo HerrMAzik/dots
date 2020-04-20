@@ -1,5 +1,10 @@
 {
     "current_user": "mirzaianov",
+    "maintenance": {
+        "mirzaianov": {
+            "bug_3964_repair_time": "1582643240264"
+        }
+    },
     "mountdir": "/run/user/1000/keybase/kbfs",
     "mountdirdefault": "/run/user/1000/keybase/kbfs",
     "pinentry": {
