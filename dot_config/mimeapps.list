@@ -1,0 +1,13 @@
+[Added Associations]
+application/json=vscodium-bin.desktop;nvim.desktop;
+text/plain=vscodium-bin.desktop;nvim.desktop;
+
+[Default Applications]
+application/json=vscodium-bin.desktop;
+text/plain=vscodium-bin.desktop;
+x-scheme-handler/web+stellar=keybase.desktop
+x-scheme-handler/keybase=keybase.desktop
+
+[Removed Associations]
+application/json=okularApplication_txt.desktop;
+text/plain=okularApplication_txt.desktop;

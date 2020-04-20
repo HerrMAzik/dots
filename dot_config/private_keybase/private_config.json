@@ -1,0 +1,20 @@
+{
+    "current_user": "mirzaianov",
+    "mountdir": "/run/user/1000/keybase/kbfs",
+    "mountdirdefault": "/run/user/1000/keybase/kbfs",
+    "pinentry": {
+        "disabled": true
+    },
+    "remember_passphrase_map": {
+        "mirzaianov": false
+    },
+    "users": {
+        "mirzaianov": {
+            "device": "9de1f5b3ea645209d00dd6cc5171d018",
+            "id": "540b028c22d0fe7f8596f62218e8a419",
+            "name": "mirzaianov",
+            "passphrase_state": 0,
+            "salt": "c43463d2441b428ac41408d08cdebfbd"
+        }
+    }
+}
