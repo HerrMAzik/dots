@@ -6,3 +6,6 @@ set -gx VISUAL vscodium
 
 set -gx GOPATH $HOME/go
 set -gx PATH $PATH $GOPATH/bin
+
+set -gx CARGO_HOME $HOME/.cargo
+set -gx PATH $PATH $CARGO_HOME/bin
