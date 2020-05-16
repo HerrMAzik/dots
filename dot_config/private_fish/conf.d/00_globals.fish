@@ -4,5 +4,4 @@ set -gx XDG_DATA_HOME $HOME/.local/share
 set -gx EDITOR nvim
 set -gx VISUAL vscodium
 
-set -gx GOPATH $HOME/go
-set -gx PATH $PATH $GOPATH/bin
+set -gx GO111MODULE auto
