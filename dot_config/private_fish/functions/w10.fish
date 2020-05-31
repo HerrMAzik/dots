@@ -39,6 +39,9 @@ function w10 --description "Backup w10"
         end
     end
 
+    echo $tempdir
+    return
+
     set -l token (pass yandex/disk/token)
     if [ $status -ne 0 ] || [ -z $token ]
             echo "Token is mandatory"
