@@ -34,6 +34,5 @@ function kdbx --description "Backup keepassxc database"
     echo "Uploading kdbx to keybase"
     keybase fs rm /keybase/public/$account/kdbx
     keybase fs cp /tmp/kdbx /keybase/public/$account/kdbx
-    keybase logout
     echo 'Uploading kdbx to keybase completed'
 end
