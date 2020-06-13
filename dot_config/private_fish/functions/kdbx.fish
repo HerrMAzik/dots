@@ -29,6 +29,7 @@ function kdbx --description "Backup keepassxc database"
     set -l passphrase (pass keybase)
     set -l account (echo 'jA0ECQMCmrPAwkScX2/r0kABlVaTprzFpn9cIrn+oXM8GL8Mmd39FUTjOvGwat1uKOpGQT3b+ySRZdHUErZ0xohFv3SM8ULTSCWKAri2uRU6' | base64 --decode | gpg --batch --decrypt --quiet --passphrase $passphrase)
     systemctl --user start kbfs.service keybase.service
+    keybase logout
     expect -c "spawn keybase login;expect \"Please enter the Keybase password*\";send \"$passphrase\r\";expect eof;"
     echo 'Logged in'
     echo "Uploading kdbx to keybase"
