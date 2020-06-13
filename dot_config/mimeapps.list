@@ -10,7 +10,3 @@ x-scheme-handler/web+stellar=keybase.desktop
 x-scheme-handler/keybase=keybase.desktop
 application/pdf=org.gnome.Evince.desktop
 x-scheme-handler/tg=telegramdesktop.desktop
-
-[Removed Associations]
-application/json=okularApplication_txt.desktop;
-text/plain=okularApplication_txt.desktop;
