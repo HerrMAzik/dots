@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'JetBrains Mono NL', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "git.autofetch": true
+}
