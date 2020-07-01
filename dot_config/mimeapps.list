@@ -1,4 +1,8 @@
+[Added Associations]
+text/plain=code-oss.desktop;nvim.desktop;
+
 [Default Applications]
-x-scheme-handler/web+stellar=keybase.desktop
+text/plain=code-oss.desktop;
 x-scheme-handler/keybase=keybase.desktop
 x-scheme-handler/tg=telegramdesktop.desktop
+x-scheme-handler/web+stellar=keybase.desktop
