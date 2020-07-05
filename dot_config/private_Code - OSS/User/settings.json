@@ -7,5 +7,6 @@
     "git.autofetch": true,
     "explorer.confirmDelete": false,
     "files.trimTrailingWhitespace": true,
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.autoSave": "onFocusChange"
 }
