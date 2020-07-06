@@ -1,3 +1,5 @@
 alias ls="exa -lag"
 alias df="df -h"
 alias du="du -hs"
+alias ca="cargo"
+alias v="nvim"
