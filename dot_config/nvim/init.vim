@@ -7,6 +7,7 @@ Plug 'tpope/vim-commentary'
 call plug#end()
 
 colorscheme gruvbox
+set background=dark
 set number relativenumber
 set cursorline
 set list listchars+=space:·
