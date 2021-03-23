@@ -1,8 +1,9 @@
 [user]
 	name = devrtc0
-	email = azat.mirzaianov@gmail.com
+	email = herr.mazik@gmail.com
 	signingkey = E77B7CECA31179B9E0B65BD26B234BF1F6D2FE48
 [core]
 	editor = nvim
+	autocrlf = input
 [pull]
 	rebase = true
