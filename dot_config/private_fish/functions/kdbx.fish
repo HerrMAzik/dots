@@ -1,5 +1,6 @@
 function kdbx --description "Backup keepassxc database"
     set -l user_agent "Mozilla/5.0 (X11; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0"
+    set -l backup_path '/tmp/kdbx'
     
     set -l token (pass yandex/disk/token)
     if [ $status -ne 0 ] || [ -z $token ]
@@ -8,7 +9,7 @@ function kdbx --description "Backup keepassxc database"
         end
     set -l header "Authorization: OAuth $token"
 
-    xz -vvzkfc9eT0 $HOME/repo/man.kdbx | gpg --batch --output /tmp/kdbx --passphrase (pass kdb) --symmetric --yes --cipher-algo AES256
+    xz -vvzkfc9eT0 $HOME/repo/man.kdbx | gpg --batch --output $backup_path --passphrase (pass kdb) --symmetric --yes --cipher-algo AES256
     
     set -l url "https://cloud-api.yandex.net/v1/disk/resources/upload?path=disk:/backup/kdbx&overwrite=true"
     set -l resp (curl -L -A "user_agent" --stderr /dev/null -H "$header" "$url")
@@ -23,7 +24,7 @@ function kdbx --description "Backup keepassxc database"
         return -1
     end
     echo "Uploading kdbx to yandex"
-    curl -A "$user_agent" -X "$method" --compressed --compressed-ssh -H "$header" -T '/tmp/kdbx' "$url"
+    curl -A "$user_agent" -X "$method" --compressed --compressed-ssh -H "$header" -T "$backup_path" "$url"
     echo "Uploading kdbx to yandex completed"
 
     set -l passphrase (pass keybase)
@@ -34,6 +35,8 @@ function kdbx --description "Backup keepassxc database"
     echo 'Logged in'
     echo "Uploading kdbx to keybase"
     keybase fs rm /keybase/public/$account/kdbx
-    keybase fs cp /tmp/kdbx /keybase/public/$account/kdbx
+    keybase fs cp $backup_path /keybase/public/$account/kdbx
     echo 'Uploading kdbx to keybase completed'
+
+    echo $backup_path
 end
