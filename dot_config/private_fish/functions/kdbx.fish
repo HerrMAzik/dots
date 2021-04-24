@@ -38,5 +38,6 @@ function kdbx --description "Backup keepassxc database"
     keybase fs cp $backup_path /keybase/public/$account/kdbx
     echo 'Uploading kdbx to keybase completed'
 
-    echo $backup_path
+    cp $backup_path $HOME/repo/kdbx/
+    sh -c "cd $HOME/repo/kdbx; git commit -S -a --amend -m 'kdbx';git push origin --force;git push gitlab --force"
 end
