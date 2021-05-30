@@ -1,10 +1,12 @@
 [Added Associations]
 application/pdf=okularApplication_pdf.desktop;
 application/rtf=libreoffice-writer.desktop;
+application/x-java-archive=org.kde.ark.desktop;
 image/png=org.kde.gwenview.desktop;
 
 [Default Applications]
 application/rtf=libreoffice-writer.desktop;
+application/x-java-archive=org.kde.ark.desktop;
 text/plain=code-oss.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
@@ -13,3 +15,4 @@ x-scheme-handler/web+stellar=keybase.desktop
 
 [Removed Associations]
 application/rtf=code-oss.desktop;nvim.desktop;okularApplication_txt.desktop;
+application/x-java-archive=java-java-openjdk.desktop;
